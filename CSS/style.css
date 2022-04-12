@@ -1,0 +1,15 @@
+body{
+    font-family: mulish;
+    margin: 0;
+    
+}
+.divisorbase{
+    background-color: rgb(169, 197, 248);
+    width: 720px;
+    margin-left: auto; /*Margem esquerda*/
+    margin-right: auto; /*Margem direita*/
+    padding: 15px;
+    margin-top: 80px; /*Margem superior*/
+    border-radius: 15px;
+
+}
