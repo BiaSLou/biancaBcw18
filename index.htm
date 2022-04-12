@@ -17,82 +17,66 @@
 </head>
 
 <body>
+    <div class="header">
+        <img src="./IMG/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web 19</h1>
+        <p>Turma de desenvolvimento Web Full Stack da Soulcode Academy </p>
+    </div>
 
-    <header>
+    <header class="topnav">
         <ul>
-            <li> <a href="#cadastro">Cadastro </a></li>
-            <li><a href="#trajetoria">Trajetória </a> </li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
             <li><a href="#dicas">Dicas</a></li>
             <li><a href="#trabalhos">Orientações</a></li>
         </ul>
-       
     </header>
 
     <main>
-        <div class="divisorbase" id="trajetoria">
-            <h1>Tajetória de Sucesso</h1>
-            <table>
-                <tr>
-                    <th><strong>Fases</strong></th>
-                    <th> <strong>Descrição</strong></th>
-                    <th> <strong>Imagem</strong></th>
-                </tr>
-
-                <tr>
-                    <td>Primeira</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/IMG/imagem3.jpeg">
+                        <img src="/IMG/imagem3.jpeg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
                         Inscrição no site oficial, execução do teste de lógica,
                         curso da trilha zero e montagem do Pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./IMG/imagem3.jpeg" alt="Ato de inscrição SoulCode" style="width:180px"
-                                height="180px">
-                            <figcaption> Fig.1 - Ato de inscrição SoulCode.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
+                    </div>
 
-                <tr>
-                    <td>Segunda</td>
-                    <td>
+                </div>
+            </div>
+
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/IMG/imagem2.jpg">
+                        <img src="/IMG/imagem2.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
                         Testes da trilha zero e entrevista com recrutador para
                         avaliacão de bolsa, nesta fase se analisa a eligibilidade
                         para bolsa de estudos perante os clientes e candidatos.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./IMG/imagem2.jpg" alt="Testes de lógica para seleção" style="width:180px"
-                                height="180px">
-                            <figcaption> Fig.2 - Testes de lógica para seleção.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Terceira</td>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/IMG/Imagem1.jpg">
+                        <img src="/IMG/Imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
                         Dinâmica em grupo com a realização de teste on-line e
                         convocação dos alunos aprovados.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./IMG/Imagem1.jpg" alt="Aprovação e Convocação" style="width:180px"
-                                height="180px">
-                            <figcaption> Fig.3 - Aprovação e Convocação.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-
-            </table>
-            <div>
-
+                    </div>
+                </div>
             </div>
-
-
         </div>
+
         <div class="divisorbase" id="cadastro">
-            <form action="#" method="" id="cadastro">
+            <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
                 </div>
@@ -103,7 +87,7 @@
                 </div>
 
                 <div>
-                    <label for="email" id="email"> Email:</label>
+                    <label for="email"> Email:</label>
                     <input type="email" id="email" placeholder="Entre com seu email:">
                 </div>
 
@@ -113,16 +97,18 @@
                 </div>
 
                 <div>
-                    <label for="mascimento"> Data de Nascimento</label>
+                    <label for="nascimento"> Data de Nascimento:</label>
                     <input type="date" id="nascimento">
                 </div>
 
                 <div>
-                    <input type="checkbox" id="deficiencia" checked>
+                    <input type="checkbox" id="deficiencia">
                     <label for="deficiencia"> Deficiência</label>
                 </div>
 
-                <div><label for="educacao"> Nível Escolar:</label> <br>
+                <div>
+                    <label for="escolaridade"> Nível Escolar:</label>
+                    <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="F1">Fundamental <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="B1">Bacharel <br>
@@ -151,8 +137,8 @@
                 <div>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
-
                 </div>
+                
             </form>
         </div>
     </main>
