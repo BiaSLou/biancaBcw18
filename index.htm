@@ -16,19 +16,20 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="./IMG/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
-        <h1>Bootcamp de Java Spring com Angular Web [19]/h1>
-            <p>Turma de desenvolvimento Web Full Stack da Soulcode Academy</p>
-    </div>
-
-    <header class="topnav">
-        <ul>
-            <li><a href="#cadastro">Cadastro</a></li>
-            <li><a href="#trajetoria">Trajetória</a></li>
-            <li><a href="#dicas">Dicas</a></li>
-            <li><a href="#trabalhos">Orientações</a></li>
-        </ul>
+    <header>
+        <div class="header">
+            <img src="./IMG/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+            <h1>Bootcamp de Java Spring com Angular Web [19]/h1>
+                <p>Turma de desenvolvimento Web Full Stack da Soulcode Academy</p>
+        </div>
+        <div class="topnav">
+            <ul>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#trabalho">Orientações</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -179,38 +180,54 @@
                         <input type="radio" name="escolaridade" id="escolaridade" value="P3">Doutorado <br>
                     </div>
 
-                <div class="formRow">
-                    <div class="col-20"><label for="experiencia">Qual sua experiencia com programação:</label></div>
-                    <div class="col-70"><input type="range" id="experiencia" min="5" max="50"
-                            oninput="display.value=value" onchange="display.value=value">
-                        <input type="text" id="display" value="0" oninput="experiencia.value=value"
-                            onchange="experiencia.value=value" maxlength="3" size="3">
+                    <div class="formRow">
+                        <div class="col-20"><label for="experiencia">Qual sua experiencia com programação:</label></div>
+                        <div class="col-70"><input type="range" id="experiencia" min="5" max="50"oninput="display.value=value" onchange="display.value=value">
+                            <input type="text" id="display" value="0" oninput="experiencia.value=value"onchange="experiencia.value=value" maxlength="3" size="3">
+                        </div>
+                    </div>
+
+                    <div class="formRow">
+                        <div class="col-20"><label for="descricao"> Descrição da Experiência:</label><br></div>
+                        <div class="col-70"><textarea id="descricao" cols="70" rows="5"placeholder="Descreva as tecnologias conhecidas:"></textarea></div>
+                    </div>
+
+                    <div class="formRow">
+                        <div class="col-70">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
                     </div>
                 </div>
-
-                <div class="formRow">
-                    <div class="col-20"><label for="descricao"> Descrição da Experiência:</label><br></div>
-                    <div class="col-70"><textarea id="descricao" cols="70" rows="5"
-                            placeholder="Descreva as tecnologias conhecidas:"></textarea></div>
-                </div>
-
-                <div class="formRow">
-                    <div class="col-70">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </div>
-                </div>
-
             </form>
         </div>
     </main>
 
-    <footer class="footer">
-        Direitos Reservados a SoulCode Academy
-        Alamenda Santos VIP Coworking 1117 - Jardins São Paulo/SP
+    <footer>
+        <div class="footer">
+            <div class="footerSocial">
+                <div style="flex-grow: 1;"><img src="./img/icone1.png" alt="">
+                </div>
+                <div style="flex-grow: 1;"> <img src="./img/icone2.png" alt="">
+                </div>
+                <div style="flex-grow: 1;"><img src="./img/icone3.png" alt="">
+                </div>
+                <div style="flex-grow: 1;"> <img src="./img/icone4.png" alt="">
+                </div>
+                <div style="flex-grow: 1;"> <img src="./img/icone5.png" alt="">
+                </div>
+                <div style="flex-grow: 1;"><img src="./img/icone6.png" alt="">
+                </div>
+                <div style="flex-grow: 12;">
+            <p>
+                Direitos Reservados a SoulCode Academy
+                Alamenda Santos VIP Coworking 1117 - Jardins São Paulo/SP
+            </p>
+           
+            </div>
+        </div>
+    </div>
     </footer>
-
-
 </body>
 
 </html>
